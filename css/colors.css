@@ -1,0 +1,40 @@
+/*  ---- Background Colors ---- */
+
+.redbg {background: rgba(244, 67, 54, 1.0);}
+
+.bluebg {background: rgba(33, 150, 243, 1.0);}
+
+.greenbg {background: rgba(76, 175, 80, 1.0);}
+
+.yellowbg {background: rgba(255, 235, 59, 1.0);}
+
+
+/*  ---- Font Colors ---- */
+
+.red {color: rgba(244, 67, 54, 1.0);}
+
+.red:hover {color: rgba(244, 67, 54, 0.8);}
+
+.blue {color: rgba(33, 150, 243, 1.0);}
+
+.blue:hover {color: rgba(33, 150, 243, 0.8);}
+
+.green {color: rgba(76, 175, 80, 1.0);}
+
+.green:hover {color: rgba(76, 175, 80, 0.8);}
+
+.yellow {color: rgba(255, 235, 59, 1.0);}
+
+.yellow:hover {color: rgba(255, 235, 59, 0.8);}
+
+
+
+/* ---- Main Font Blacks --- */
+
+
+
+.primary {color: rgba(0, 0, 0, 1.0);}
+
+.secondary {color: rgba(0, 0, 0, 0.7);}
+
+.disabled {color: rgba(0, 0, 0, 0.5);}

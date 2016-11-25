@@ -1,0 +1,431 @@
+/*--------------------------------------*\
+                NORMALISE
+\*--------------------------------------*/
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+    margin:     0;
+    padding:    0;
+    border:     0;
+    font: inherit;
+    font-size:           100%;
+    vertical-align:  baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:   '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing:         0;
+}
+
+
+
+
+
+
+
+/*--------------------------------------*\
+              STYLESHEET.CSS
+\*--------------------------------------*/
+
+
+
+*  { box-sizing: border-box; }
+
+body  {
+    font-family: 'Roboto', sans-serif;
+    color:         rgba(0, 0, 0, 0.8);
+    font-weight:                  600;
+    position:                   fixed;
+    background-color:         #f8f9fa;
+}
+
+
+
+
+
+/*------------------------------------*\
+              FONT STYLES
+\*------------------------------------*/
+
+
+
+h1  {
+    font-size:            150px;
+    padding-bottom:        30px;
+    vertical-align:      middle;
+    color:   rgba(0, 0, 0, 0.9);
+}
+
+
+h2  { font-size: 100px; }
+
+
+a  {
+    padding:   50px 10px 0 10px;
+    color:   rgba(0, 0, 0, 0.8);
+    font-size:             4rem;
+    text-decoration:       none;
+    text-align:            left;
+}
+
+
+a:hover  { color: rgba(0, 0, 0, 1);}
+
+
+span  {
+    font-size:    20px;
+    padding-left:  7px;
+    font-weight:   300;
+    line-height: 160px;
+}
+
+
+
+
+
+/*------------------------------------*\
+          FONTAWESOME STYLES
+\*------------------------------------*/
+
+
+
+.fa  { transition: all 0.5s ease; }
+
+
+.fa-envelope  {
+    color:   rgba(219, 50, 54, 1);
+    font-size:  2.8rem !important;
+}
+
+
+.fa-github          { color: rgba(000, 000, 000, 0.9); }
+
+.fa-github:hover    { color: rgba(000, 000, 000, 0.7); }
+
+.fa-linkedin        { color: rgba(000, 123, 181, 1.0); }
+
+.fa-linkedin:hover  { color: rgba(000, 123, 181, 0.9); }
+
+.fa-envelope:hover  { color: rgba(219, 050, 054, 0.9); }
+
+
+
+
+
+/*------------------------------------*\
+                 DIVS
+\*------------------------------------*/
+
+
+
+.container  {
+    display:                     flex;
+    flex-direction:            column;
+    overflow:                  hidden;
+    height:                     100vh;
+    border:                20px solid;
+    border-color: rgba(40, 40, 40, 1);
+}
+
+
+.top  {
+    display:          flex;
+    flex-wrap:        wrap;
+    flex-direction:    row;
+    width:            100%;
+    vertical-align: middle;
+}
+
+
+.richard  {
+    min-width:       500px;
+    vertical-align: middle;
+}
+
+
+.me  {
+    min-width: 200px;
+    display:    flex;
+}
+
+
+.bottom  { padding-bottom: 70px; }
+
+
+.links  {
+    bottom:    20px;
+    right:     20px;
+    position: fixed;
+}
+
+
+
+
+
+/*------------------------------------*\
+             IMAGE CLASSES
+\*------------------------------------*/
+
+
+
+.avatar  { height: 130px; }
+
+.arrow  {
+    height:     30px;
+    margin-top: 60px;
+}
+
+
+
+
+
+/*------------------------------------*\
+             MEDIA QUERIES
+\*------------------------------------*/
+
+
+
+/* ---- WIDTH SECTION ---- */
+
+
+/* -3000px- */
+
+@media screen and (max-width: 3000px)  {
+    h1  { font-size: 160px; }
+    h2  { font-size: 110px; }
+
+    .fa-envelope  { font-size: 3rem; }
+}
+
+
+/* -1800px- */
+
+@media screen and (max-width: 1800px)  {
+    h1  { font-size: 140px; }
+    h2  { font-size: 105px; }
+}
+
+
+/* -1350px- */
+
+@media screen and (max-width: 1350px)  {
+    h1  { font-size: 120px; }
+    h2  { font-size: 100px; }
+
+    .avatar  { height: 110px; }
+
+    span  { font-size: 17px; }
+}
+
+
+/* -1200px- */
+
+@media screen and (max-width: 1200px)  {
+    h1  { font-size: 100px; }
+    h2  { font-size: 80px; }
+
+    .avatar  { height: 90px; }
+
+    .arrow  {
+        height:     20px;
+        margin-top: 40px;
+    }
+
+    span  {
+        font-size:    15px;
+        padding-left:  4px;
+        line-height: 110px;
+    }
+}
+
+
+/* -1000px- */
+
+@media screen and (max-width: 1000px)  {
+    h1  { font-size: 85px; }
+    h2  { font-size: 80px; }
+
+    .avatar  { height: 80px; }
+
+    .arrow  {
+        height:     20px;
+        margin-top: 35px;
+    }
+
+    span  {
+        font-size:    14px;
+        padding-left:  4px;
+        line-height: 100px;
+    }
+}
+
+
+/* -835px- */
+
+@media screen and (max-width: 835px)  {
+
+    h1  { font-size: 70px; }
+    h2  { font-size: 60px; }
+
+    .avatar  { height: 65px; }
+
+    .arrow  {
+        height:     20px;
+        margin-top: 30px;
+    }
+
+    span  {
+        font-size:    13px;
+        padding-left:  4px;
+        line-height: 100px;
+    }
+}
+
+
+/* -745px- */
+
+@media screen and (max-width: 745px)  {
+    h1  { font-size: 13vw; }
+    h2  { font-size: 35px; }
+
+    .richard  { min-width: 100%; }
+
+    .me  {
+        margin-left:    auto;
+        margin-right:   auto;
+        display:       block;
+        min-width:     150px;
+        padding-bottom: 30px;
+    }
+
+    span  { display: none; }
+
+    .arrow  { display: none; }
+
+    .avatar  {
+        height:     150px;
+        padding-left: 0px;
+    }
+
+    .links  {
+        width:        100%;
+        right:         0px;
+        text-align: center;
+    }
+}
+
+
+/* -700px- */
+
+@media screen and (max-width: 700px)  {
+    h1  { font-size: 12vw; }
+    h2  { font-size: 30px; }
+}
+
+
+/* -450px- */
+
+@media screen and (max-width: 450px)  {
+    h1  { font-size: 11vw; }
+    h2  { font-size: 30px; }
+}
+
+
+
+
+
+/* ---- HEIGHT SECTION ---- */
+
+
+/* -670px- */
+
+@media screen and (max-height: 670px)  {
+    h2  { font-size: 30px; }
+}
+
+
+/* -550px- */
+
+@media screen and (max-height: 550px)  {
+    h2  { font-size: 30px; }
+}
+
+
+/* -450px- */
+
+@media screen and (max-height: 490px)  {
+    h2  { font-size: 30px; }
+
+    .me  {
+        position:   absolute;
+        top:             50%;
+        left:            50%;
+        transform: translate(-50%, -50%);
+        z-index:          -1;
+        opacity:         0.6;
+        margin-left:    auto;
+        margin-right:   auto;
+        display:       block;
+        min-width:     150px;
+        padding-bottom: 30px;
+    }
+
+    .links  {
+        width:        100%;
+        right:         0px;
+        text-align: center;
+    }
+
+    span  { display: none; }
+
+    .arrow  { display: none; }
+
+    .richard  { min-width: 100%; }
+
+    .avatar  {
+        height:     150px;
+        padding-left: 0px;
+    }
+
+}
+
+
+/* -400px- */
+
+@media screen and (max-height: 400px)  {
+    h2  { font-size: 30px; }
+}
+
+
+/* -350px- */
+
+@media screen and (max-height: 350px)  {
+    h2  { font-size: 25px !important; }
+    h1  { font-size: 9vw; }
+}
+
+
+/* -260px- */
+
+@media screen and (max-height: 260px)  {
+    h2  { font-size: 20px !important; }
+}
